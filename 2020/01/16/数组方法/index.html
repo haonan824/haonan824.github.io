@@ -122,7 +122,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    155 字
+                    764 字
                   </span>&nbsp;
                 
 
@@ -130,7 +130,7 @@
                   
                   &nbsp;<i class="far fa-clock"></i>
                   <span class="post-count">
-                      1 分钟
+                      2 分钟
                   </span>&nbsp;
                 
 
@@ -163,10 +163,10 @@
       <div class="py-5 z-depth-3" id="board">
         <div class="post-content mx-auto" id="post">
           <div class="markdown-body">
-            <h2 id="�i�ԭ�����"><a href="#�i�ԭ�����" class="headerlink" title="�ı�ԭ�����"></a><strong>�ı�ԭ�����</strong></h2><p><strong>1 pop():</strong><br>ɾ�� arrayObject �����һ��Ԫ�أ������鳤�ȼ� 1�����ҷ�����ɾ����Ԫ�ص�ֵ����������Ѿ�Ϊ�գ��� pop() �� �ı����飬������ undefined ֵ��arrayObject.pop()</p>
+            <h2 id="改变原数组的"><a href="#改变原数组的" class="headerlink" title="改变原数组的"></a><strong>改变原数组的</strong></h2><p><strong>1 pop():</strong><br>删除 arrayObject 的最后一个元素，把数组长度减 1，并且返回它删除的元素的值。如果数组已经为空，则 pop() 不 改变数组，并返回 undefined 值。arrayObject.pop()</p>
 <p><strong>2 push():</strong></p>
-<p>push() �����ɰ����Ĳ���˳�����ӵ� arrayObject ��β����<br>��ֱ���޸� arrayObject�������Ǵ���һ���µ�����,arrayObject.push(newelement1,newelement2,��.,newelementX)<br><strong>3 reverse():�÷�����ı�ԭ�������飬�����ᴴ���µ����顣</strong>arrayObject.reverse()<br><strong>4 shift():����ĵ�һ��Ԫ�ش�����ɾ���������ص�һ��Ԫ�ص�ֵ,��������ǿյģ���ô shift() �������������κβ���.</strong><br><strong>5 sort():����������á�</strong>��ע�⣬������ԭ�����Ͻ������򣬲����ɸ�����arrayObject.sort(sortby) (������ø÷���ʱû��ʹ�ò�����������ĸ˳��������е�Ԫ�ؽ�������<br>��˵�ø���ȷ�㣬�ǰ����ַ������˳���������Ҫʵ����һ�㣬����Ӧ�������Ԫ�ض�ת�����ַ��������б�Ҫ�����Ա���бȽϡ�<br>����밴��������׼�������򣬾���Ҫ�ṩ�ȽϺ������ú���Ҫ�Ƚ�����ֵ��Ȼ�󷵻�һ������˵��������ֵ�����˳������֡�<br>�ȽϺ���Ӧ�þ����������� a �� b���䷵��ֵ���£�<br>�� a С�� b���������������� a Ӧ�ó����� b ֮ǰ���򷵻�һ��С�� 0 ��ֵ��<br>�� a ���� b���򷵻� 0��<br>�� a ���� b���򷵻�һ������ 0 ��ֵ��)<br><strong>6 splice():splice()</strong> ������ɾ���� index ����ʼ���������Ԫ�أ������ò����б���������һ������ֵ���滻��Щ��ɾ����Ԫ�ء�<br>����� arrayObject ��ɾ����Ԫ�أ��򷵻ص��Ǻ��б�ɾ����Ԫ�ص�����<br>arrayObject.splice(index,howmany,item1,��..,itemX)<br><strong>7 unshift():unshift() ������������Ŀ�ͷ����һ�������Ԫ�أ��������µĳ��ȡ�</strong><br>arrayObject.unshift(newelement1,newelement2,��.,newelementX)����arrayObject ���³���</p>
-<h2 id="���i�ԭ�����"><a href="#���i�ԭ�����" class="headerlink" title="���ı�ԭ�����"></a>���ı�ԭ�����</h2><p>1 concat():�������������������飬���᷵�ر����������һ��������arrayObject.concat(arrayX,arrayX,����,arrayX)<br>2 jion():����һ���ַ��������ַ�����ͨ���� arrayObject ��ÿ��Ԫ��ת��Ϊ�ַ�����Ȼ�����Щ�ַ�����������,arrayObject.join(separator)<br>3 slice():��������ǿյ�arrayObject.slice(start,end)<br>������4toSource()*toSource() ������ʾ�����Դ���롣<br>��ԭʼֵ�� Array �������������ж���̳С�<br>toSource() ����ͨ���� JavaScript �ں�̨�Զ����ã�������ʽ�س����ڴ����С�object.toSource()<br>toString():arrayObject ���ַ�����ʾ������ֵ��û�в����� join() �������ص��ַ�����ͬarrayObject.toString()<br>toLocaleString():������ת��Ϊ�����ַ�����arrayObject.toLocaleString()<br>valueOf()��valueOf() �������� Array �����ԭʼֵ��<br>��ԭʼֵ�� Array �������������ж���̳С�<br>arrayObject.valueOf()</p>
+<p>push() 方法可把它的参数顺序添加到 arrayObject 的尾部。<br>它直接修改 arrayObject，而不是创建一个新的数组,arrayObject.push(newelement1,newelement2,….,newelementX)<br><strong>3 reverse():该方法会改变原来的数组，而不会创建新的数组。</strong>arrayObject.reverse()<br><strong>4 shift():数组的第一个元素从其中删除，并返回第一个元素的值,如果数组是空的，那么 shift() 方法将不进行任何操作.</strong><br><strong>5 sort():对数组的引用。</strong>请注意，数组在原数组上进行排序，不生成副本。arrayObject.sort(sortby) (如果调用该方法时没有使用参数，将按字母顺序对数组中的元素进行排序<br>，说得更精确点，是按照字符编码的顺序进行排序。要实现这一点，首先应把数组的元素都转换成字符串（如有必要），以便进行比较。<br>如果想按照其他标准进行排序，就需要提供比较函数，该函数要比较两个值，然后返回一个用于说明这两个值的相对顺序的数字。<br>比较函数应该具有两个参数 a 和 b，其返回值如下：<br>若 a 小于 b，在排序后的数组中 a 应该出现在 b 之前，则返回一个小于 0 的值。<br>若 a 等于 b，则返回 0。<br>若 a 大于 b，则返回一个大于 0 的值。)<br><strong>6 splice():splice()</strong> 方法可删除从 index 处开始的零个或多个元素，并且用参数列表中声明的一个或多个值来替换那些被删除的元素。<br>如果从 arrayObject 中删除了元素，则返回的是含有被删除的元素的数组<br>arrayObject.splice(index,howmany,item1,…..,itemX)<br><strong>7 unshift():unshift() 方法可向数组的开头添加一个或更多元素，并返回新的长度。</strong><br>arrayObject.unshift(newelement1,newelement2,….,newelementX)返回arrayObject 的新长度</p>
+<h2 id="不改变原数组的"><a href="#不改变原数组的" class="headerlink" title="不改变原数组的"></a>不改变原数组的</h2><p>1 concat():用于连接两个或多个数组，仅会返回被连接数组的一个副本，arrayObject.concat(arrayX,arrayX,……,arrayX)<br>2 jion():返回一个字符串。该字符串是通过把 arrayObject 的每个元素转换为字符串，然后把这些字符串连接起来,arrayObject.join(separator)<br>3 slice():如果数组是空的arrayObject.slice(start,end)<br>其他：4toSource()*toSource() 方法表示对象的源代码。<br>该原始值由 Array 对象派生的所有对象继承。<br>toSource() 方法通常由 JavaScript 在后台自动调用，并不显式地出现在代码中。object.toSource()<br>toString():arrayObject 的字符串表示。返回值与没有参数的 join() 方法返回的字符串相同arrayObject.toString()<br>toLocaleString():把数组转换为本地字符串。arrayObject.toLocaleString()<br>valueOf()：valueOf() 方法返回 Array 对象的原始值。<br>该原始值由 Array 对象派生的所有对象继承。<br>arrayObject.valueOf()</p>
 
             <hr>
           </div>
