@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <title>原生轮播图 ~ 楠欲上青天</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
+
+<link rel="stylesheet" href="/css/main.css"  >
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>楠欲上青天</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">Archives</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">Categories</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">Tags</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+</nav>
+
+    <div class="view intro-2" id="background"
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;
+           background-attachment: fixed;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  Thursday, January 16th 2020, 9:45 am
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    972 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      5 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h1 id="原生轮播图"><a href="#原生轮播图" class="headerlink" title="原生轮播图"></a>原生轮播图</h1><h2 id="html-css代码"><a href="#html-css代码" class="headerlink" title="html/css代码"></a>html/css代码</h2><hr>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>轮播图<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">        * &#123;</span><br><span class="line">            margin: 0;</span><br><span class="line">            padding: 0;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.banenr-center</span> &#123;</span></span><br><span class="line">            width: 700px;</span><br><span class="line">            height: 300px;</span><br><span class="line"><span class="css">            <span class="comment">/* border: 1px solid #000; */</span></span></span><br><span class="line">            margin: 0 auto;</span><br><span class="line">            overflow: hidden;</span><br><span class="line">            position: relative;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.center</span> &#123;</span></span><br><span class="line">            width: 2800px;</span><br><span class="line">            font-size: 50px;</span><br><span class="line">            text-align: center;</span><br><span class="line">            line-height: 300px;</span><br><span class="line">            position: absolute;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.center</span> <span class="selector-tag">li</span> &#123;</span></span><br><span class="line">            list-style: none;</span><br><span class="line">            width: 700px;</span><br><span class="line">            height: 300px;</span><br><span class="line">            float: left;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.but-left</span> &#123;</span></span><br><span class="line">            position: absolute;</span><br><span class="line">            left: 0;</span><br><span class="line">            top: 140px;</span><br><span class="line">            width: 20px;</span><br><span class="line">            height: 35px;</span><br><span class="line">            display: none;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.but-right</span> &#123;</span></span><br><span class="line">            position: absolute;</span><br><span class="line">            right: 0;</span><br><span class="line">            top: 140px;</span><br><span class="line">            width: 20px;</span><br><span class="line">            height: 35px;</span><br><span class="line">            display: none;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-tag">div</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">span</span> &#123;</span></span><br><span class="line">            display: block;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.centers</span> <span class="selector-tag">li</span> &#123;</span></span><br><span class="line">            list-style: none;</span><br><span class="line">            width: 8px;</span><br><span class="line">            height: 8px;</span><br><span class="line"><span class="css">            <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#000</span>;</span></span><br><span class="line">            border-radius: 50%;</span><br><span class="line">            float: left;</span><br><span class="line">            margin-left: 20px;</span><br><span class="line">            position: relative;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.centers</span> &#123;</span></span><br><span class="line">            position: absolute;</span><br><span class="line">            bottom: 20px;</span><br><span class="line">            left: 50%;</span><br><span class="line">            transform: translateX(-50%);</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.active</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">background</span>: <span class="selector-id">#fff</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"banenr-center"</span>&gt;</span></span><br><span class="line">        </span><br><span class="line">        <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">'center'</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"background-color: blue;"</span> <span class="attr">id</span>=<span class="string">"one"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"background-color: red;"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"background-color:yellow;"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">        &lt;span class='but-left'&gt;&lt;&lt;/span&gt;</span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">'but-right'</span>&gt;</span>&gt;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"centers"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"active"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./js/animation.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./js/carousel.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="js代码animation代码"><a href="#js代码animation代码" class="headerlink" title="js代码animation代码"></a>js代码<em>animation</em>代码</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 封装一个JS文件， 这个文件就是动画文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	element：要移动的元素</span></span><br><span class="line"><span class="comment">	targetVal：要移动的距离</span></span><br><span class="line"><span class="comment">	speed：一步要移动距离</span></span><br><span class="line"><span class="comment"> */</span> </span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义全局变量</span></span><br><span class="line"><span class="keyword">var</span> dsq;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">moveElement</span> (<span class="params">element, targetVal, speed</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 一上来先清除上一个</span></span><br><span class="line">	<span class="built_in">window</span>.clearInterval(dsq);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 点击设置定时器</span></span><br><span class="line">	dsq = <span class="built_in">window</span>.setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 每次点击都会启动定时器，当多次点击，多次启动，会有n个定时器提示控制元素移动</span></span><br><span class="line">		<span class="comment">// 我们要想处理这个问题：保证页面只有一个定时器</span></span><br><span class="line">		<span class="comment">// 每次点击要清除上一个定时器，再打开新的定时器</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">// 要想设置盒子移动，我们需要知道上一次盒子left的值，再加上10，最后赋值给盒子的left</span></span><br><span class="line">		<span class="comment">// 获取盒子左距离</span></span><br><span class="line">		<span class="keyword">var</span> leftVal = element.offsetLeft;</span><br><span class="line">		<span class="comment">// 如果到达指定位置，我们要停止定时器继续运动</span></span><br><span class="line">		<span class="keyword">if</span> (leftVal == targetVal) &#123;</span><br><span class="line">			<span class="built_in">window</span>.clearInterval(dsq);</span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 判断：如果不成倍数的移动，那么元素会左右晃动，原因是因为不够走，强制走就会大于，再小目标来回弹动</span></span><br><span class="line">		<span class="comment">// 处理：如果不够继续移动一步，直接让元素到大目标既可</span></span><br><span class="line">		<span class="comment">// 所以此时元素有两种，一种够移动一步，一种是不够走一步，不够走一步直接设置元素到达目标</span></span><br><span class="line">		<span class="keyword">if</span> (<span class="built_in">Math</span>.abs(targetVal - leftVal) &lt; speed) &#123; <span class="comment">// 不够走一步</span></span><br><span class="line">			<span class="comment">// 直接把元素设置到目标</span></span><br><span class="line">			element.style.left = targetVal + <span class="string">'px'</span>;</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="comment">// 够走一步</span></span><br><span class="line">			<span class="comment">// 加10</span></span><br><span class="line">			<span class="keyword">if</span> (targetVal &gt; leftVal) &#123; <span class="comment">// 正方向</span></span><br><span class="line">				leftVal = leftVal + speed;</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				leftVal = leftVal - speed;</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">			<span class="comment">// 设置给盒子的left</span></span><br><span class="line">			element.style.left = leftVal + <span class="string">'px'</span>;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;,<span class="number">10</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="js代码carousel代码"><a href="#js代码carousel代码" class="headerlink" title="js代码carousel代码"></a>js代码carousel代码</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> banenrCenter = <span class="built_in">document</span>.querySelector(<span class="string">'.banenr-center'</span>);</span><br><span class="line"><span class="keyword">var</span> butLeft = <span class="built_in">document</span>.querySelector(<span class="string">'.but-left'</span>);</span><br><span class="line"><span class="keyword">var</span> burRight = <span class="built_in">document</span>.querySelector(<span class="string">'.but-right'</span>);</span><br><span class="line"><span class="keyword">var</span> center = <span class="built_in">document</span>.querySelector(<span class="string">'.center'</span>);</span><br><span class="line"><span class="keyword">var</span> lis = <span class="built_in">document</span>.querySelectorAll(<span class="string">'.centers li'</span>);</span><br><span class="line"><span class="keyword">var</span> width = banenrCenter.offsetWidth;</span><br><span class="line"><span class="built_in">console</span>.log(width);</span><br><span class="line"><span class="keyword">var</span> one = <span class="built_in">document</span>.getElementById(<span class="string">'one'</span>);</span><br><span class="line"><span class="keyword">var</span> index = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> clone = one.cloneNode(<span class="literal">true</span>);</span><br><span class="line">center.appendChild(clone);</span><br><span class="line"><span class="comment">//右滚动</span></span><br><span class="line">burRight.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(index==<span class="number">0</span>)&#123;</span><br><span class="line">        center.style.left = <span class="number">0</span> + <span class="string">'px'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    lis[index].className = <span class="string">''</span>;</span><br><span class="line">    index++;</span><br><span class="line">    distance = - index * width</span><br><span class="line">    moveElement(center,distance,<span class="number">10</span>)</span><br><span class="line">    <span class="keyword">if</span> (index == <span class="number">3</span>) &#123;</span><br><span class="line">        index = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// center.style.left = - index * width + 'px';</span></span><br><span class="line">    lis[index].className = <span class="string">'active'</span>;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//左滚动</span></span><br><span class="line">butLeft.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    lis[index].className = <span class="string">''</span>;</span><br><span class="line">    index--;</span><br><span class="line">    distance = - index * width</span><br><span class="line">    moveElement(center,distance,<span class="number">10</span>)</span><br><span class="line">    <span class="keyword">if</span> (index &lt; <span class="number">0</span>) &#123;</span><br><span class="line">        index = <span class="number">2</span></span><br><span class="line">        center.style.left = <span class="number">-2100</span> + <span class="string">'px'</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="comment">// center.style.left = - index * width + 'px';</span></span><br><span class="line"></span><br><span class="line">    lis[index].className = <span class="string">'active'</span>;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//小点跟随</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; lis.length; i++) &#123;</span><br><span class="line">    lis[i].xiabiao = i;</span><br><span class="line">    lis[i].onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        lis[index].className = <span class="string">''</span>;</span><br><span class="line">        index = <span class="keyword">this</span>[<span class="string">'xiabiao'</span>];</span><br><span class="line">        <span class="comment">// center.style.left = -index * width + 'px';</span></span><br><span class="line">        distance = - index * width</span><br><span class="line">        moveElement(center,distance,<span class="number">10</span>)</span><br><span class="line">        lis[index].className = <span class="string">'active'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//自动轮播</span></span><br><span class="line"><span class="keyword">var</span> auto = <span class="built_in">window</span>.setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    burRight.onclick();</span><br><span class="line">&#125;,<span class="number">2000</span>);</span><br><span class="line">banenrCenter.onmouseover = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">window</span>.clearInterval(auto);</span><br><span class="line">&#125;;</span><br><span class="line">banenrCenter.onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    auto = <span class="built_in">window</span>.setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        burRight.onclick();</span><br><span class="line">    &#125;,<span class="number">2000</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
+  
+  <br>
+
+
+
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "原生轮播图&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+  
+
+
+
+</body>
+</html>
